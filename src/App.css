@@ -3,75 +3,87 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 body {
-  background-color: #242424;
-}
-
-.grid-cards {
+  background-color: #1c1c1c;
+  color: #fff;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-.image-container {
-  flex-basis: 19%;
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
 }
 
-img {
-  max-width: 100%;
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
-@media screen and (max-width: 992px) {
-  .image-container {
-    flex-basis: 31%;
-  }
+a {
+  color: #fff;
 }
 
-@media screen and (max-width: 600px) {
-  .image-container {
-    flex-basis: 48%;
-  }
-}
-
-.search-bar{
-  margin: 40px;
-
-}
-
-.search-input{
-  font-size: 24px;
-  background-color: transparent;
-  border: 2px solid #61dafb;
-  color: #61dafb;
-  padding:  15px 20px;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.search-input:focus{
-  outline: none;
-}
-
-.search-input::placeholder{
-  color: #61dafb;
-}
-
-.search-button{
-  background-color: transparent;
-  border: 2px solid #61dafb;
-  font-size: 24px;
-  padding: 15px 20px;
-  border-radius: 0px 10px 10px 0px;
-  color: #61dafb;
-}
-
-.search-button:hover{
-  background-color: #61dafb;
-  color: #282c34;
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.search-button:focus{
-  outline: none;
+button:hover {
+  background-color: #444;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea {
+  background-color: #333!important;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #333!important;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #444;
+}
+
+ul {
+  text-align: left;
+  padding:0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button {
+  margin-left: 30px;
+}
+
+.add-button {
+  margin-top: 20px;
 }
